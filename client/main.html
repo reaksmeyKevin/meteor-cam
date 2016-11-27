@@ -18,12 +18,16 @@
       </ul>
     </div>
   </nav>
-
   {{> app}}
 </body>
 
 <template name="app">
   <div class="container">
+    {{#autoForm collection=collection id="todo" type="insert"}}
+      {{>afQuickField name="title"}}
+      {{>afQuickField name="description"}}
+      <button type="submit">Save</button>
+    {{/autoForm}}
     <h1>Simple Meteor App</h1>
     <p>Listing Todos</p>
     <ul class="collection">
