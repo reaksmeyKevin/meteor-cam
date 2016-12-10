@@ -1,3 +1,8 @@
 <template name="post">
-    Welcome to Posts
+   <h2>Post</h2>
+   {{#autoForm collection=collection id="postForm" type="insert"}}
+        {{> afQuickField name="title"}}
+        {{> afQuickField name="description"}}
+        <button type="submit" class="waves-effect waves-light btn">Save</button>
+   {{/autoForm}}
 </template>
