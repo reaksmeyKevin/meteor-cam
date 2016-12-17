@@ -5,4 +5,13 @@
         {{> afQuickField name="description"}}
         <button type="submit" class="waves-effect waves-light btn">Save</button>
    {{/autoForm}}
+   {{#if dataIsNotReady}}
+    Loading...
+  {{else}}
+    <ul class="collection">
+    {{#each posts}}
+        {{> _postComponent}}
+    {{/each}}
+    </ul>
+   {{/if}}
 </template>

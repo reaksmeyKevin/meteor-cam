@@ -3,3 +3,4 @@
 2. meteor add ongoworks:security
 3. meteor add ovcharik:alertifyjs
 4. meteor add theara:id-generator
+
