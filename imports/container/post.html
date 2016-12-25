@@ -15,3 +15,12 @@
     </ul>
    {{/if}}
 </template>
+
+<template name="editPost">
+    <h2>Edit Post</h2>
+    {{#autoForm collection=collection doc=postDoc id="postEditForm" type="update"}}
+        {{> afQuickField name="title"}}
+        {{> afQuickField name="description"}}
+        <button type="submit" class="waves-effect waves-light btn">Save</button>
+    {{/autoForm}}
+</template>
